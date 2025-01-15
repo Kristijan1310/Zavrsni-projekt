@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerija slika članka o BMW M3, M4, Z4, M2, X5, i8, M5, M8, X3 i X4.">
+    <meta name="keywords" content="BMW, M2, M3, M4, Z4, X5, i8, M5, M8, X3, X4, galerija, automobil, slike, novosti">
+    <meta name="author" content="Kristijan Antunović">
+    <title>Galerija BMW</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            background-image: url("bmw-m4-cs-hd-05.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem 1.2rem;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        main p {
+            margin-bottom: 2rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .gallery-item {
+            width: 48%;
+        }
+
+        .gallery-item figcaption {
+            text-align: center;
+            font-style: italic;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-item .description {
+            text-align: center;
+            font-size: 1rem;
+            color: #333;
+            margin-top: 1rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.2rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .back-link:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay img {
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="BMW.svg.png" alt="BMW Autokuća Banner">
+        <h1>Galerija BMW</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna stranica</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>BMW M3, M4, Z4, M2, X5, i8, M5, M8, X3, X4 - Istražite najbolju ponudu BMW-a</h1>
+        <h2>Galerija slika i detalji svih modela</h2>
+
+        <p>BMW je brend poznat po svojim izvanrednim automobilima koji pružaju savršen spoj luksuza, performansi i tehnologije. U ovom članku predstavljamo nekoliko modela koji su postali simboli snage, dizajna i inovacija: BMW M3, M4, Z4, M2, X5, i8, M5, M8, X3 i X4. Svaki od ovih modela ima jedinstven karakter, a svi nude nevjerojatne performanse na cesti.</p>
+
+        <div class="gallery">
+            <figure class="gallery-item">
+                <img src="bmw-m3-gtr.avif" alt="BMW M3" class="gallery-img">
+                <figcaption>BMW M3</figcaption>
+                <div class="description">BMW M3 je sportski model poznat po iznimnim performansama i preciznom upravljanju.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="BMW-M4-2019.webp" alt="BMW M4" class="gallery-img">
+                <figcaption>BMW M4</figcaption>
+                <div class="description">BMW M4 donosi još veću preciznost i performanse, s naglaskom na aerodinamičnost i stil.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="BMW-Z4-white.jpg" alt="BMW Z4" class="gallery-img">
+                <figcaption>BMW Z4</figcaption>
+                <div class="description">BMW Z4 je luksuzni sportski roadster koji pruža nevjerojatan spoj performansi i užitka u vožnji.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="BMW-M2-sport.webp" alt="BMW M2" class="gallery-img">
+                <figcaption>BMW M2</figcaption>
+                <div class="description">BMW M2 je kompaktni sportski automobil koji nudi snagu i agilnost u manjoj dimenziji.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="BMW-X5-F95.jpg" alt="BMW X5" class="gallery-img">
+                <figcaption>BMW X5</figcaption>
+                <div class="description">BMW X5 je luksuzni SUV koji balansira snagu, komfor i naprednu tehnologiju.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="bmw-i8.jpg" alt="BMW i8" class="gallery-img">
+                <figcaption>BMW i8</figcaption>
+                <div class="description">BMW i8 je revolucionarni hibridni sportski automobil s nevjerojatnim performansama i ekološkom učinkovitošću.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="2024-BMW-M5.jpg" alt="BMW M5" class="gallery-img">
+                <figcaption>BMW M5</figcaption>
+                <div class="description">BMW M5 je luksuzni sportski sedan s moćnim motorom i naprednom tehnologijom.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="23256043.jpg" alt="BMW M8" class="gallery-img">
+                <figcaption>BMW M8</figcaption>
+                <div class="description">BMW M8 je vrhunski sportski automobil s nevjerojatnom snagom i luksuzom.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="2025-bmw-x3-m50-165-673658ffda8c2.jpg" alt="BMW X3" class="gallery-img">
+                <figcaption>BMW X3</figcaption>
+                <div class="description">BMW X3 je luksuzni kompaktni SUV koji kombinuje performanse, prostor i udobnost.</div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="bmw_x4_xdrive30i-010.jpg" alt="BMW X4" class="gallery-img">
+                <figcaption>BMW X4</figcaption>
+                <div class="description">BMW X4 je sportski SUV koji donosi luksuz i agilnost, idealan za dinamične vozače.</div>
+            </figure>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kristijan Antunović. All rights reserved.</p>
+    </footer>
+
+    <div id="imageOverlay" class="overlay">
+        <img id="overlayImage" src="" alt="Povećana slika">
+    </div>
+
+    <script>
+        // Funkcija za prikazivanje slike u većem prikazu
+        const galleryImages = document.querySelectorAll('.gallery-img');
+        const overlay = document.getElementById('imageOverlay');
+        const overlayImage = document.getElementById('overlayImage');
+
+        galleryImages.forEach(image => {
+            image.addEventListener('click', function() {
+                overlay.style.display = 'flex';
+                overlayImage.src = this.src;
+            });
+        });
+
+        // Funkcija za zatvaranje overlay prikaza slike
+        overlay.addEventListener('click', function() {
+            overlay.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stranica O nama - informacije o našem timu i našoj misiji.">
+    <meta name="keywords" content="O nama, tim, misija, video, informacije">
+    <meta name="author" content="Kristijan Antunović">
+    <title>O nama</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            background-image: url("50695-Bmw-World.avif");
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem 1.2rem;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        main p {
+            margin-bottom: 2rem;
+        }
+
+        .video-section {
+            display: grid;
+            grid-template-columns: 3fr 2fr; /* Video sada zauzima veći prostor */
+            gap: 2rem;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            max-width: 800px; /* Maksimalna širina videa */
+            height: 450px; /* Specifična visina */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sjena */
+        }
+
+        .video-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .video-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .video-section iframe {
+                max-width: 100%;
+                height: auto; /* Dinamična visina za mobilne uređaje */
+            }
+
+            header {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>O nama</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna stranica</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Naša misija</h2>
+        <p>Naša misija je pružiti najnovije informacije, inovacije i tehnologije u svijetu automobila. Kroz detalje, galerije i novosti o različitim BMW modelima, želimo našim korisnicima omogućiti bolje razumijevanje ove prestižne marke i njenog utjecaja na automobilsku industriju.</p>
+
+        <h2>Upoznajte BMW svijet</h2>
+        <div class="video-section">
+            <video controls width="100%" max-width="800px" height="450px" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <source src="The Soul of BMW..mp4" type="video/mp4">
+                Vaš preglednik ne podržava video tag.
+            </video>
+            <div class="video-description">
+                <p>
+                    BMW je sinonim za luksuz i performanse. U ovom videu predstavljamo najnovije modele i tehnologije 
+                    koje čine BMW jednim od najpoželjnijih brendova automobila na svijetu. 
+                    <br><br>
+                    Pogledajte kako BMW kombinuje eleganciju i inovacije u svom dizajnu, te kako ove značajke pružaju 
+                    nevjerojatno iskustvo vožnje. Svaki model, od limuzina do SUV-a, dizajniran je s pažnjom i preciznošću. 
+                </p>
+            </div>
+        </div>
+
+        <h2>Naš tim</h2>
+        <p>Naš tim čini grupa strastvenih entuzijasta automobila, novinara i dizajnera koji su posvećeni tome da svim ljubiteljima automobila pruže najkvalitetnije sadržaje i najnovije informacije o BMW-u. Svi članovi našeg tima posjeduju bogato iskustvo u automobilističkoj industriji i stalno prate nove trendove kako bi vam donijeli najzanimljivije novosti.</p>
+
+        <h2>Zašto BMW?</h2>
+        <p>BMW je brend koji oduvijek povezuje luksuz, performanse i inovacije. Svi modeli BMW-a dizajnirani su s naglaskom na visoku tehnologiju, udobnost i nevjerojatne performanse. Od M serije do SUV-ova, svaki BMW model nudi iskustvo vožnje koje je teško usporediti s bilo kojim drugim automobilom na tržištu. Naša strast prema ovom brendu motivira nas da svakodnevno istražujemo najnovije informacije i dostignuća u svijetu BMW-a.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kristijan Antunović. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

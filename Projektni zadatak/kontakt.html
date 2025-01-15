@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt stranica za BMW Autokuću.">
+    <meta name="keywords" content="BMW, kontakt, email, forma, karta, automobil, kontaktirajte nas">
+    <meta name="author" content="Kristijan Antunović">
+    <title>Kontakt - BMW Autokuća</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            background-image: url("B7avPpN.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 5rem 00;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem 1.2rem;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        form input, form select, form textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        form button {
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        .map-container {
+            margin-top: 2rem;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            border: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.2rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .back-link:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="BMW.svg.png" alt="BMW Autokuća Banner">
+        <h1>Kontaktirajte nas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna stranica</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Obratite nam se</h2>
+        <p>Za bilo kakva pitanja ili dodatne informacije, slobodno nas kontaktirajte putem donje forme. Naša ekipa će vam odgovoriti u najkraćem mogućem roku.</p>
+
+        <!-- Kontakt Forma -->
+        <form id="contact-form" action="submit_form.php" method="POST">
+            <label for="first-name">Ime:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Prezime:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">E-mail adresa:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Država:</label>
+            <select id="country" name="country">
+                <option value="hr">Hrvatska</option>
+                <option value="si">Slovenija</option>
+                <option value="rs">Srbija</option>
+                <option value="ba">Bosna i Hercegovina</option>
+            </select>
+
+            <label for="message">Opis:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Pošaljite</button>
+        </form>
+
+        <!-- Google Karta -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18938.221005141295!2d16.029584936484536!3d45.704757772396746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667e36f23379af%3A0x2600ad5153371002!2zR3JhZGnEh2k!5e1!3m2!1shr!2shr!4v1736946820890!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kristijan Antunović. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Provjera ispravnosti emaila prije slanja forme
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            var email = document.getElementById('email').value;
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert('Molimo vas da unesete ispravnu e-mail adresu.');
+            }
+        });
+    </script>
+
+</body>
+</html>
